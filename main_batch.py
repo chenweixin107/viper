@@ -21,6 +21,8 @@ from configs import config
 from utils import seed_everything
 import datasets
 
+import pdb
+
 # See https://github.com/pytorch/pytorch/issues/11201, https://github.com/pytorch/pytorch/issues/973
 # Not for dataloader, but for multiprocessing batches
 mp.set_sharing_strategy('file_system')
@@ -51,7 +53,8 @@ def run_program(parameters, queues_in_, input_type_, retrying=False):
                   f'ImagePatch, VideoSegment, ' \
                   'llm_query, bool_to_yesno, distance, best_image_match):\n' \
                   f'    # Answer is:'
-    code = code_header + code
+    # code = code_header + code
+    code = code.replace('def execute_command(image):', code_header) # New
 
     try:
         exec(compile(code, 'Codex', 'exec'), globals())
@@ -96,6 +99,7 @@ def run_program(parameters, queues_in_, input_type_, retrying=False):
     # libraries for some reason. Because defining it globally is not ideal, we just delete it after running it.
     if f'execute_command_{sample_id}' in globals():
         del globals()[f'execute_command_{sample_id}']  # If it failed to compile the code, it won't be defined
+
     return result, code
 
 
@@ -141,7 +145,8 @@ def main():
     codes_all = None
     if config.use_cached_codex:
         results = pd.read_csv(config.cached_codex_path)
-        codes_all = [r.split('# Answer is:')[1] for r in results['code']]
+        # codes_all = [r.split('# Answer is:')[1] for r in results['code']]
+        codes_all = results['code'][0] # New, codes_all is now a string
     # python -c "from joblib import Memory; cache = Memory('cache/', verbose=0); cache.clear()"
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=0, pin_memory=True,
                             collate_fn=my_collate)
@@ -171,7 +176,8 @@ def main():
                                   extra_context=batch['extra_context'])
 
                 else:
-                    codes = codes_all[i * batch_size:(i + 1) * batch_size]  # If cache
+                    # codes = codes_all[i * batch_size:(i + 1) * batch_size]  # If cache
+                    codes = [codes_all] * batch_size # New
 
                 # Run the code
                 if config.execute_code:

@@ -14,6 +14,8 @@ from word2number import w2n
 from utils import show_single_image, load_json
 from vision_processes import forward, config
 
+import pdb
+
 console = Console(highlight=False)
 
 
@@ -82,18 +84,18 @@ class ImagePatch:
         elif isinstance(image, torch.Tensor) and image.dtype == torch.uint8:
             image = image / 255
 
-        if left is None and right is None and upper is None and lower is None:
-            self.cropped_image = image
-            self.left = 0
-            self.lower = 0
-            self.right = image.shape[2]  # width
-            self.upper = image.shape[1]  # height
-        else:
+        try:
             self.cropped_image = image[:, image.shape[1]-upper:image.shape[1]-lower, left:right]
             self.left = left + parent_left
             self.upper = upper + parent_lower
             self.right = right + parent_left
             self.lower = lower + parent_lower
+        except Exception as e:
+            self.cropped_image = image
+            self.left = 0
+            self.lower = 0
+            self.right = image.shape[2]  # width
+            self.upper = image.shape[1]  # height
 
         self.height = self.cropped_image.shape[1]
         self.width = self.cropped_image.shape[2]
@@ -134,14 +136,17 @@ class ImagePatch:
         List[ImagePatch]
             a list of ImagePatch objects matching object_name contained in the crop
         """
-        if object_name in ["object", "objects"]:
-            all_object_coordinates = self.forward('maskrcnn', self.cropped_image)[0]
-        else:
-
-            if object_name == 'person':
-                object_name = 'people'  # GLIP does better at people than person
-
-            all_object_coordinates = self.forward('glip', self.cropped_image, object_name)
+        # Original version
+        # if object_name in ["object", "objects"]:
+        #     all_object_coordinates = self.forward('maskrcnn', self.cropped_image)[0]
+        # else:
+        #
+        #     if object_name == 'person':
+        #         object_name = 'people'  # GLIP does better at people than person
+        #
+        #     all_object_coordinates = self.forward('glip', self.cropped_image, object_name)
+        # New version
+        all_object_coordinates = self.forward('groundingdino', self.cropped_image, object_name)
         if len(all_object_coordinates) == 0:
             return []
 

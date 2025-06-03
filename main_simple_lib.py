@@ -26,13 +26,15 @@ from utils import show_single_image
 from IPython.display import update_display, clear_output
 from IPython.core.display import HTML
 
+import pdb
+
 cache = Memory('cache/' if config.use_cache else None, verbose=0)
 
 mp.set_start_method('spawn', force=True)
 from vision_processes import forward, finish_all_consumers  # This import loads all the models. May take a while
 from image_patch import *
 from video_segment import *
-from datasets.dataset import MyDataset
+from datasets.my_dataset import MyDataset
 
 console = Console(highlight=False, force_terminal=False)
 
@@ -247,7 +249,7 @@ def load_image(path):
         image = Image.open(requests.get(path, stream=True).raw).convert('RGB')
         image = transforms.ToTensor()(image)
     else:
-        image = Image.open(path)
+        image = Image.open(path).convert('RGB')
         image = transforms.ToTensor()(image)
     return image
 
@@ -255,8 +257,10 @@ def load_image(path):
 def get_code(query):
     model_name_codex = 'codellama' if config.codex.model == 'codellama' else 'codex'
     code = forward(model_name_codex, prompt=query, input_type="image")
-    if config.codex.model not in ('gpt-3.5-turbo', 'gpt-4'):
+    if config.codex.model not in ('gpt-3.5-turbo', 'gpt-4', 'codellama'): # New: add 'codellama'
         code = f'def execute_command(image, my_fig, time_wait_between_lines, syntax):' + code # chat models give execute_command due to system behaviour
+    if config.codex.model in ('codellama'): # New
+        code = code.replace("(image)", "(image, my_fig, time_wait_between_lines, syntax)")
     code_for_syntax = code.replace("(image, my_fig, time_wait_between_lines, syntax)", "(image)")
     syntax_1 = Syntax(code_for_syntax, "python", theme="monokai", line_numbers=True, start_line=0)
     console.print(syntax_1)

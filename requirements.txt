@@ -1,4 +1,5 @@
 accelerate
+backoff
 bitsandbytes
 cityscapesscripts
 decord
@@ -13,6 +14,7 @@ joblib
 kornia
 nltk
 num2words
+omegaconf
 pandas
 Pillow
 prettytable
@@ -23,6 +25,7 @@ qd
 regex
 requests
 rich
+sentencepiece
 scipy
 setuptools
 wandb

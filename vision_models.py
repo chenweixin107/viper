@@ -1333,7 +1333,11 @@ class BLIPModel(BaseModel):
                 else:
                     raise e
 
-        self.qa_prompt = "Question: {} Short answer:"
+        if 'blip' in blip_v2_model_type:
+            self.qa_prompt = "Question: {} Short answer:"
+        else:
+            # self.qa_prompt = "Question: {} Please output one word in lower case only. Answer:" # Available datasets: KandLogic
+            self.qa_prompt = "Question: {} Please output one number only. Answer:" # Available datasets: MNLogic, MNMath
         self.caption_prompt = "a photo of"
         self.half_precision = half_precision
         self.max_words = 50
@@ -1377,6 +1381,7 @@ class BLIPModel(BaseModel):
                                                 num_return_sequences=1, temperature=1)
             generated_text = self.processor.batch_decode(generated_ids, skip_special_tokens=True)
         else:
+            # define message
             messages = [{
                 "role": "user",
                 "content": [
@@ -1385,12 +1390,29 @@ class BLIPModel(BaseModel):
                 ]
             }]
             text = self.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+
+            # process image if the shape does not satisfy requirements
+            def pad_if_needed(image_tensor, min_height=28, min_width=28):
+                _, h, w = image_tensor.shape
+                pad_h = max(0, min_height - h)
+                pad_w = max(0, min_width - w)
+
+                # Pad (left, right, top, bottom)
+                padding = (0, pad_w, 0, pad_h)
+                padded_image = F.pad(image_tensor, padding, mode='constant', value=0) # This pads the bottom and right sides of the image to meet the minimum size requirement, without distorting the original content. The padding value is zero (black pixels)
+                return padded_image
+
+            image = [pad_if_needed(img) for img in image]
+
+            # process message
             inputs = self.processor(
                 text=[text],
                 images=image,  # pass list of PIL Images here
                 padding=True,
                 return_tensors="pt"
             ).to("cuda")
+
+            # generation
             generated_ids = self.model.generate(**inputs, max_new_tokens=128)
             generated_ids_trimmed = [
                 out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
@@ -1398,6 +1420,7 @@ class BLIPModel(BaseModel):
             generated_text = self.processor.batch_decode(
                 generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
             )
+        # print(f"***Qwen generation: {generated_text}")
 
         return generated_text
 
@@ -1426,6 +1449,7 @@ class BLIPModel(BaseModel):
 
         if not self.to_batch:
             response = response[0]
+
         return response
 
 

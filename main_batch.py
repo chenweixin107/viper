@@ -2,6 +2,7 @@ import datetime
 import math
 import os
 import pathlib
+import time
 from functools import partial
 import warnings
 import traceback
@@ -30,7 +31,7 @@ queue_results = None
 
 cache = Memory('cache/' if config.use_cache else None, verbose=0)
 runs_dict = {}
-seed_everything()
+seed_everything(seed=3)
 console = Console(highlight=False)
 
 
@@ -63,7 +64,9 @@ def run_program(parameters, queues_in_, input_type_, retrying=False):
         try:
             with open(config.fixed_code_file, 'r') as f:
                 fixed_code = f.read()
-            code = code_header + fixed_code 
+            code = code_header + fixed_code
+            # code = code.replace('question', "'"+query+"'")
+            code = code.replace('question', 'query')
             exec(compile(code, 'Codex', 'exec'), globals())
         except Exception as e2:
             print(f'Not even the fixed code worked. Sample {sample_id} failed at compilation time with error: {e2}')
@@ -91,6 +94,7 @@ def run_program(parameters, queues_in_, input_type_, retrying=False):
         print(f'Sample {sample_id} failed with error: {e}. Next you will see an "expected an indented block" error. ')
         # Retry again with fixed code
         new_code = "["  # This code will break upon execution, and it will be caught by the except clause
+        # new_code = 'def execute_command(image):\n    image_patch = ImagePatch(image)\n    return image_patch.simple_query(question)'
         result = run_program((new_code, sample_id, image, possible_answers, query), queues_in_, input_type_,
                              retrying=True)[0]
 
@@ -147,6 +151,7 @@ def main():
         results = pd.read_csv(config.cached_codex_path)
         # codes_all = [r.split('# Answer is:')[1] for r in results['code']]
         codes_all = results['code'][0] # New, codes_all is now a string
+
     # python -c "from joblib import Memory; cache = Memory('cache/', verbose=0); cache.clear()"
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=0, pin_memory=True,
                             collate_fn=my_collate)
@@ -160,6 +165,8 @@ def main():
     all_img_paths = []
     all_possible_answers = []
     all_query_types = []
+
+    start_time = time.time()
 
     with mp.Pool(processes=num_processes, initializer=worker_init, initargs=(queues_results,)) \
             if config.multiprocessing else open(os.devnull, "w") as pool:
@@ -219,6 +226,11 @@ def main():
             traceback.print_exc()
             console.print(f'Exception: {e}')
             console.print("Completing logging and exiting...")
+
+    # Print running time
+    end_time = time.time()
+    run_time = end_time - start_time
+    print(f"***Running time: {run_time:.6f} seconds***")
 
     try:
         accuracy = dataset.accuracy(all_results, all_answers, all_possible_answers, all_query_types)

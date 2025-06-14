@@ -6,7 +6,7 @@ dataset:                                            # Dataset configuration
     dataset_name: 'MyDataset'                       # Dataset name
     data_path: '/home/jovyan/workspace/viper/data/MNLogic_XOR_3digit.csv'                               # Dataset path
     split: ''                                       # Dataset split. If '', it assumes there is only one split
-    max_samples: 10                                  # Maximum number of samples to load
+    max_samples:                                    # Maximum number of samples to load
     batch_size: 10                                  # Batch size
     start_sample: 0                                 # Start sample index. Only used if max_samples is not None
 
@@ -69,7 +69,7 @@ log_every: 20                                       # Log accuracy every n batch
 wandb: False                                        # Use Weights and Biases
 
 blip_half_precision: True                           # Use 8bit (Faster but slightly less accurate) for BLIP if True
-blip_v2_model_type: blip2-flan-t5-xxl               # Which model to use for BLIP-2
+blip_v2_model_type: Qwen/Qwen2.5-VL-3B-Instruct               # Which model to use for BLIP-2
 
 use_fixed_code: False                               # Use a fixed code for all samples (do not generate with Codex)
 fixed_code_file: ./prompts/fixed_code/blip2.prompt  # Path to the fixed code file

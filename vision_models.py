@@ -1336,8 +1336,8 @@ class BLIPModel(BaseModel):
         if 'blip' in blip_v2_model_type:
             self.qa_prompt = "Question: {} Short answer:"
         else:
-            # self.qa_prompt = "Question: {} Please output one word in lower case only. Answer:" # Available datasets: KandLogic
-            self.qa_prompt = "Question: {} Please output one number only. Answer:" # Available datasets: MNLogic, MNMath
+            self.qa_prompt = "Question: {} Please output one word in lower case only. Answer:" # Available datasets: KandLogic
+            # self.qa_prompt = "Question: {} Please output one number only. Answer:" # Available datasets: MNLogic, MNMath
         self.caption_prompt = "a photo of"
         self.half_precision = half_precision
         self.max_words = 50

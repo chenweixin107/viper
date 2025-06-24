@@ -31,7 +31,7 @@ queue_results = None
 
 cache = Memory('cache/' if config.use_cache else None, verbose=0)
 runs_dict = {}
-seed_everything(seed=3)
+seed_everything(seed=4)
 console = Console(highlight=False)
 
 
@@ -66,7 +66,7 @@ def run_program(parameters, queues_in_, input_type_, retrying=False):
                 fixed_code = f.read()
             code = code_header + fixed_code
             # code = code.replace('question', "'"+query+"'")
-            code = code.replace('question', 'query')
+            code = code.replace('question', 'query') # New
             exec(compile(code, 'Codex', 'exec'), globals())
         except Exception as e2:
             print(f'Not even the fixed code worked. Sample {sample_id} failed at compilation time with error: {e2}')

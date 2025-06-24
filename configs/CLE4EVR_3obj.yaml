@@ -4,7 +4,7 @@ execute_code: True                                 # Execute the code after gene
 
 dataset:                                            # Dataset configuration
     dataset_name: 'MyDataset'                       # Dataset name
-    data_path: '/home/jovyan/workspace/viper/data/MNMath_Add_5digit.csv'                               # Dataset path
+    data_path: '/home/jovyan/workspace/viper/data/CLE4EVR_3obj.csv'                               # Dataset path
     split: ''                                       # Dataset split. If '', it assumes there is only one split
     max_samples:                                   # Maximum number of samples to load
     batch_size: 10                                  # Batch size
@@ -60,11 +60,11 @@ codex:
 # Saving and loading parameters
 save: True                                          # Save the results to a file
 save_new_results: True                              # If False, overwrite the results file
-results_dir: ./results/MNMath_Add_5digit/                             # Directory to save the results
+results_dir: ./results/CLE4EVR_3obj/                             # Directory to save the results
 use_cache: True                                     # Use cache for the models that support it (now, GPT-3)
 clear_cache: False                                  # Clear stored cache
 use_cached_codex: True                             # Use previously-computed Codex results
-cached_codex_path: '/home/jovyan/workspace/viper/results/MNMath_Add_5digit/code_results.csv'                               # Path to the csv results file from which to load Codex results
+cached_codex_path: '/home/jovyan/workspace/viper/results/CLE4EVR_3obj/code_results.csv'                               # Path to the csv results file from which to load Codex results
 log_every: 20                                       # Log accuracy every n batches
 wandb: False                                        # Use Weights and Biases
 

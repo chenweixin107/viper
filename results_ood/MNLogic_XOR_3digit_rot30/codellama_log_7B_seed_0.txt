@@ -1,0 +1,99 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:02<00:08,  2.09s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.97s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.94s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:07<00:01,  1.93s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:08<00:00,  1.42s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:08<00:00,  1.66s/it]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:03<00:06,  3.20s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:06<00:03,  3.23s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:08<00:00,  2.69s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:08<00:00,  2.83s/it]
+  0%|          | 0/300 [00:00<?, ?it/s]/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:95: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 13, in execute_command_8
+    from joblib import Memory
+IndexError: list index out of range
+Sample 8 failed with error: list index out of range. Next you will see an "expected an indented block" error. 
+Sample 8 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 0/300: 0.9
+  0%|          | 1/300 [00:04<24:28,  4.91s/it]  1%|          | 2/300 [00:09<22:52,  4.61s/it]  1%|          | 3/300 [00:13<22:17,  4.50s/it]  1%|▏         | 4/300 [00:18<22:00,  4.46s/it]  2%|▏         | 5/300 [00:22<21:47,  4.43s/it]  2%|▏         | 6/300 [00:26<21:42,  4.43s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 12, in execute_command_67
+    import torch.multiprocessing as mp
+IndexError: list index out of range
+  2%|▏         | 7/300 [00:31<21:17,  4.36s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 13, in execute_command_77
+    from joblib import Memory
+IndexError: list index out of range
+  2%|▏         | 7/300 [00:34<24:12,  4.96s/it]
+Sample 67 failed with error: list index out of range. Next you will see an "expected an indented block" error. 
+Sample 67 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 77 failed with error: list index out of range. Next you will see an "expected an indented block" error. 
+Sample 77 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 271, in <module>
+    main()
+  File "/home/weixinchen/viper/main_batch.py", line 196, in main
+    result = run_program([c, sample_id, img, possible_answers, query], queues_in, input_type)
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_78
+  File "/home/weixinchen/viper/image_patch.py", line 267, in simple_query
+    return self.forward('blip', self.cropped_image, question, task='qa')
+  File "/home/weixinchen/viper/image_patch.py", line 117, in forward
+    return forward(model_name, *args, queues=self.queues, **kwargs)
+  File "/home/weixinchen/viper/vision_processes.py", line 198, in forward
+    out = consumers[model_name](*args, **kwargs)
+  File "/home/weixinchen/viper/vision_processes.py", line 70, in _function
+    out = model_instance.forward(*args, **kwargs)
+  File "/home/weixinchen/viper/vision_models.py", line 1443, in forward
+    response_qa = self.qa(images_qa, prompts_qa) if len(images_qa) > 0 else []
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/weixinchen/viper/vision_models.py", line 1419, in qa
+    generated_ids = self.model.generate(**inputs, max_new_tokens=128)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/generation/utils.py", line 2623, in generate
+    result = self._sample(
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/generation/utils.py", line 3604, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/utils/generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 1487, in forward
+    outputs = self.model(
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 1228, in forward
+    image_embeds = self.get_image_features(pixel_values, image_grid_thw)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 1178, in get_image_features
+    image_embeds = self.visual(pixel_values, grid_thw=image_grid_thw)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 475, in forward
+    hidden_states = blk(
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/modeling_layers.py", line 83, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 291, in forward
+    hidden_states = hidden_states + self.attn(
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/models/qwen2_5_vl/modeling_qwen2_5_vl.py", line 254, in forward
+    attn_output, _ = attention_interface(
+  File "/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/integrations/sdpa_attention.py", line 66, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+KeyboardInterrupt

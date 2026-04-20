@@ -1,0 +1,2935 @@
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+You have video processor config saved in `preprocessor.json` file which is deprecated. Video processor configs should be saved in their own `video_preprocessor.json` file. You can rename the file or load and save the processor back which renames it automatically. Loading from `preprocessor.json` will be removed in v5.0.
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.19it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.30it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.33it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.73it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.50it/s]
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:01<00:03,  1.57s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:03<00:01,  1.56s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.30s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:04<00:00,  1.37s/it]
+  0%|          | 0/300 [00:00<?, ?it/s]/home/weixinchen/anaconda3/envs/viper/lib/python3.9/site-packages/transformers/models/grounding_dino/processing_grounding_dino.py:95: FutureWarning: The key `labels` is will return integer ids in `GroundingDinoProcessor.post_process_grounded_object_detection` output since v4.51.0. Use `text_labels` instead to retrieve string object names.
+  warnings.warn(self.message, FutureWarning)
+Accuracy at Batch 0/300: 0.0
+  0%|          | 1/300 [00:07<37:45,  7.58s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_16
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+  1%|          | 2/300 [00:13<32:43,  6.59s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_25
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+  1%|          | 3/300 [00:20<32:47,  6.62s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_33
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_34
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+  1%|▏         | 4/300 [00:26<32:15,  6.54s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_44
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+  2%|▏         | 5/300 [00:32<31:31,  6.41s/it]  2%|▏         | 6/300 [00:39<31:53,  6.51s/it]  2%|▏         | 7/300 [00:47<33:35,  6.88s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_72
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_74
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_75
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_77
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '0.2'
+  3%|▎         | 8/300 [00:54<34:01,  6.99s/it]  3%|▎         | 9/300 [01:01<34:21,  7.09s/it]  3%|▎         | 10/300 [01:08<33:21,  6.90s/it]  4%|▎         | 11/300 [01:15<33:31,  6.96s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_110
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '2.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_112
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_115
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_116
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+  4%|▍         | 12/300 [01:21<33:09,  6.91s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_125
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_126
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '1.75'
+  4%|▍         | 13/300 [01:28<33:02,  6.91s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_137
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_138
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+  5%|▍         | 14/300 [01:35<32:46,  6.88s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_141
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '1.5'
+  5%|▌         | 15/300 [01:42<31:55,  6.72s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_154
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+  5%|▌         | 16/300 [01:48<31:43,  6.70s/it]  6%|▌         | 17/300 [01:55<31:56,  6.77s/it]  6%|▌         | 18/300 [02:02<31:39,  6.74s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_181
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+  6%|▋         | 19/300 [02:09<32:14,  6.88s/it]  7%|▋         | 20/300 [02:16<31:54,  6.84s/it]Sample 16 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 16 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 25 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 25 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 33 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 33 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 34 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 34 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 44 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 44 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 72 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 72 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 74 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 74 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 75 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 75 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 77 failed with error: invalid literal for int() with base 10: '0.2'. Next you will see an "expected an indented block" error. 
+Sample 77 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 110 failed with error: invalid literal for int() with base 10: '2.5'. Next you will see an "expected an indented block" error. 
+Sample 110 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 112 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 112 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 115 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 115 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 116 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 116 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 125 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 125 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 126 failed with error: invalid literal for int() with base 10: '1.75'. Next you will see an "expected an indented block" error. 
+Sample 126 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 137 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 137 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 138 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 138 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 141 failed with error: invalid literal for int() with base 10: '1.5'. Next you will see an "expected an indented block" error. 
+Sample 141 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 154 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 154 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 181 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 181 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 20/300: 0.009523809523809525
+  7%|▋         | 21/300 [02:23<31:58,  6.88s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_219
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '1.4'
+  7%|▋         | 22/300 [02:30<32:11,  6.95s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_226
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+  8%|▊         | 23/300 [02:37<32:00,  6.93s/it]  8%|▊         | 24/300 [02:44<32:41,  7.11s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_241
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+  8%|▊         | 25/300 [02:51<31:29,  6.87s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_250
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+  9%|▊         | 26/300 [02:58<31:34,  6.92s/it]  9%|▉         | 27/300 [03:04<31:17,  6.88s/it]  9%|▉         | 28/300 [03:11<31:16,  6.90s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_287
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 10%|▉         | 29/300 [03:18<31:15,  6.92s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_295
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 10%|█         | 30/300 [03:25<30:45,  6.84s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_300
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.3333333333333333'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_305
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 10%|█         | 31/300 [03:32<30:56,  6.90s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_310
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 11%|█         | 32/300 [03:39<31:03,  6.95s/it] 11%|█         | 33/300 [03:46<31:15,  7.02s/it] 11%|█▏        | 34/300 [03:53<31:09,  7.03s/it] 12%|█▏        | 35/300 [04:01<31:45,  7.19s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_354
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_356
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 12%|█▏        | 36/300 [04:08<31:26,  7.14s/it] 12%|█▏        | 37/300 [04:15<31:18,  7.14s/it] 13%|█▎        | 38/300 [04:22<30:37,  7.01s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_387
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 13%|█▎        | 39/300 [04:29<31:03,  7.14s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_398
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 13%|█▎        | 40/300 [04:36<29:55,  6.90s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_407
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '67/695'
+Sample 219 failed with error: invalid literal for int() with base 10: '1.4'. Next you will see an "expected an indented block" error. 
+Sample 219 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 226 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 226 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 241 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 241 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 250 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 250 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 287 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 287 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 295 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 295 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 300 failed with error: invalid literal for int() with base 10: '0.3333333333333333'. Next you will see an "expected an indented block" error. 
+Sample 300 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 305 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 305 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 310 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 310 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 354 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 354 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 356 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 356 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 387 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 387 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 398 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 398 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 407 failed with error: invalid literal for int() with base 10: '67/695'. Next you will see an "expected an indented block" error. 
+Sample 407 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 40/300: 0.007317073170731708
+ 14%|█▎        | 41/300 [04:43<30:19,  7.02s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_419
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 14%|█▍        | 42/300 [04:49<29:43,  6.91s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_426
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '1.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_428
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_429
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 14%|█▍        | 43/300 [04:56<29:44,  6.94s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_433
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_435
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_436
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_438
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '3.5'
+ 15%|█▍        | 44/300 [05:03<29:37,  6.94s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_442
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_444
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_445
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 15%|█▌        | 45/300 [05:10<29:28,  6.94s/it] 15%|█▌        | 46/300 [05:18<29:53,  7.06s/it] 16%|█▌        | 47/300 [05:25<30:29,  7.23s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_476
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_477
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 16%|█▌        | 48/300 [05:32<30:03,  7.16s/it] 16%|█▋        | 49/300 [05:39<29:31,  7.06s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_495
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 17%|█▋        | 50/300 [05:46<29:09,  7.00s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_507
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 17%|█▋        | 51/300 [05:53<29:21,  7.07s/it] 17%|█▋        | 52/300 [06:00<29:14,  7.07s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_522
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 18%|█▊        | 53/300 [06:07<28:31,  6.93s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_536
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_537
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 18%|█▊        | 54/300 [06:14<28:39,  6.99s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_542
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_544
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 18%|█▊        | 55/300 [06:21<28:52,  7.07s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_550
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_552
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_557
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 19%|█▊        | 56/300 [06:27<27:37,  6.79s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_568
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 19%|█▉        | 57/300 [06:34<27:36,  6.82s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_578
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_579
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 19%|█▉        | 58/300 [06:41<27:40,  6.86s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_582
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_585
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 20%|█▉        | 59/300 [06:48<27:40,  6.89s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_595
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_598
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_599
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 20%|██        | 60/300 [06:55<27:49,  6.96s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_604
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Sample 419 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 419 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 426 failed with error: invalid literal for int() with base 10: '1.5'. Next you will see an "expected an indented block" error. 
+Sample 426 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 428 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 428 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 429 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 429 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 433 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 433 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 435 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 435 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 436 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 436 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 438 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 438 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 442 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 442 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 444 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 444 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 445 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 445 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 476 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 476 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 477 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 477 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 495 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 495 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 507 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 507 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 522 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 522 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 536 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 536 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 537 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 537 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 542 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 542 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 544 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 544 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 550 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 550 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 552 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 552 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 557 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 557 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 568 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 568 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 578 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 578 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 579 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 579 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 582 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 582 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 585 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 585 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 595 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 595 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 598 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 598 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 599 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 599 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 604 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 604 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 60/300: 0.00819672131147541
+ 20%|██        | 61/300 [07:02<27:43,  6.96s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_618
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 21%|██        | 62/300 [07:09<26:58,  6.80s/it] 21%|██        | 63/300 [07:16<27:35,  6.99s/it] 21%|██▏       | 64/300 [07:24<27:57,  7.11s/it] 22%|██▏       | 65/300 [07:31<28:12,  7.20s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_655
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 22%|██▏       | 66/300 [07:38<28:11,  7.23s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_662
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 22%|██▏       | 67/300 [07:46<28:20,  7.30s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_671
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_677
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_679
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 23%|██▎       | 68/300 [07:52<27:17,  7.06s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_684
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_687
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_688
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 23%|██▎       | 69/300 [07:59<26:40,  6.93s/it] 23%|██▎       | 70/300 [08:06<26:29,  6.91s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_704
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 24%|██▎       | 71/300 [08:13<26:40,  6.99s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_716
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 24%|██▍       | 72/300 [08:20<26:17,  6.92s/it] 24%|██▍       | 73/300 [08:27<26:33,  7.02s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_738
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 25%|██▍       | 74/300 [08:34<26:48,  7.12s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_748
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 25%|██▌       | 75/300 [08:41<26:41,  7.12s/it] 25%|██▌       | 76/300 [08:49<26:37,  7.13s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_766
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_767
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 26%|██▌       | 77/300 [08:55<26:00,  7.00s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_770
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_777
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '1.3333333333333333'
+ 26%|██▌       | 78/300 [09:03<26:24,  7.14s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_782
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_785
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 26%|██▋       | 79/300 [09:09<25:38,  6.96s/it] 27%|██▋       | 80/300 [09:16<24:53,  6.79s/it]Sample 618 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 618 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 655 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 655 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 662 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 662 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 671 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 671 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 677 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 677 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 679 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 679 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 684 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 684 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 687 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 687 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 688 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 688 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 704 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 704 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 716 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 716 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 738 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 738 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 748 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 748 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 766 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 766 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 767 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 767 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 770 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 770 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 777 failed with error: invalid literal for int() with base 10: '1.3333333333333333'. Next you will see an "expected an indented block" error. 
+Sample 777 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 782 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 782 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 785 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 785 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 80/300: 0.008641975308641974
+ 27%|██▋       | 81/300 [09:23<25:36,  7.02s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_819
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '1.75'
+ 27%|██▋       | 82/300 [09:31<26:02,  7.17s/it] 28%|██▊       | 83/300 [09:38<25:56,  7.17s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_834
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_836
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 28%|██▊       | 84/300 [09:45<25:35,  7.11s/it] 28%|██▊       | 85/300 [09:52<25:37,  7.15s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_853
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 29%|██▊       | 86/300 [09:59<25:26,  7.13s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_862
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_865
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 29%|██▉       | 87/300 [10:06<25:16,  7.12s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_874
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 29%|██▉       | 88/300 [10:14<25:40,  7.27s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_883
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 30%|██▉       | 89/300 [10:21<25:04,  7.13s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_898
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.3333333333333333'
+ 30%|███       | 90/300 [10:28<25:03,  7.16s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_900
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 30%|███       | 91/300 [10:35<24:44,  7.10s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_913
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 31%|███       | 92/300 [10:42<24:31,  7.07s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_920
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 31%|███       | 93/300 [10:49<24:37,  7.14s/it] 31%|███▏      | 94/300 [10:57<24:45,  7.21s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_941
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_946
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 32%|███▏      | 95/300 [11:04<24:30,  7.17s/it] 32%|███▏      | 96/300 [11:11<24:15,  7.14s/it] 32%|███▏      | 97/300 [11:17<23:28,  6.94s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_976
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '2.25'
+ 33%|███▎      | 98/300 [11:24<23:01,  6.84s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_983
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 33%|███▎      | 99/300 [11:31<23:31,  7.02s/it] 33%|███▎      | 100/300 [11:39<23:46,  7.13s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1002
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1007
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+Sample 819 failed with error: invalid literal for int() with base 10: '1.75'. Next you will see an "expected an indented block" error. 
+Sample 819 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 834 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 834 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 836 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 836 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 853 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 853 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 862 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 862 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 865 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 865 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 874 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 874 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 883 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 883 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 898 failed with error: invalid literal for int() with base 10: '0.3333333333333333'. Next you will see an "expected an indented block" error. 
+Sample 898 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 900 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 900 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 913 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 913 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 920 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 920 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 941 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 941 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 946 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 946 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 976 failed with error: invalid literal for int() with base 10: '2.25'. Next you will see an "expected an indented block" error. 
+Sample 976 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 983 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 983 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1002 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1002 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1007 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 1007 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 100/300: 0.007920792079207921
+ 34%|███▎      | 101/300 [11:46<23:34,  7.11s/it] 34%|███▍      | 102/300 [11:53<23:25,  7.10s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1020
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '3.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1027
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 34%|███▍      | 103/300 [11:59<22:32,  6.87s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1035
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 35%|███▍      | 104/300 [12:06<22:20,  6.84s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1041
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 35%|███▌      | 105/300 [12:13<22:41,  6.98s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1059
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 35%|███▌      | 106/300 [12:20<22:07,  6.84s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1060
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 36%|███▌      | 107/300 [12:27<22:08,  6.88s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_1073
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '1.75'
+ 36%|███▌      | 108/300 [12:33<21:57,  6.86s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1084
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1088
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 36%|███▋      | 109/300 [12:41<22:16,  6.99s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1096
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 37%|███▋      | 110/300 [12:48<22:29,  7.10s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1103
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 37%|███▋      | 111/300 [12:55<22:10,  7.04s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1113
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.3333333333333333'
+ 37%|███▋      | 112/300 [13:03<22:37,  7.22s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1121
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1129
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+ 38%|███▊      | 113/300 [13:10<22:27,  7.21s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1132
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1137
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 38%|███▊      | 114/300 [13:17<22:20,  7.21s/it] 38%|███▊      | 115/300 [13:24<22:07,  7.18s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1151
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_1158
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '1.75'
+ 39%|███▊      | 116/300 [13:32<22:37,  7.38s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1162
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 39%|███▉      | 117/300 [13:38<21:17,  6.98s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1176
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1179
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 39%|███▉      | 118/300 [13:45<21:18,  7.03s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1189
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 40%|███▉      | 119/300 [13:53<21:30,  7.13s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1194
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_1196
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '3.5'
+ 40%|████      | 120/300 [13:59<21:09,  7.05s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1206
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Sample 1020 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 1020 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1027 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1027 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1035 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1035 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1041 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1041 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1059 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1059 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1060 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1060 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1073 failed with error: invalid literal for int() with base 10: '1.75'. Next you will see an "expected an indented block" error. 
+Sample 1073 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1084 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1084 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1088 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1088 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1096 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1096 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1103 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1103 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1113 failed with error: invalid literal for int() with base 10: '0.3333333333333333'. Next you will see an "expected an indented block" error. 
+Sample 1113 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1121 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1121 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1129 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 1129 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1132 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1132 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1137 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1137 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1151 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1151 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1158 failed with error: invalid literal for int() with base 10: '1.75'. Next you will see an "expected an indented block" error. 
+Sample 1158 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1162 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1162 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1176 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1176 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1179 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1179 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1189 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1189 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1194 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1194 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1196 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 1196 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1206 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1206 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 120/300: 0.008264462809917356
+ 40%|████      | 121/300 [14:07<21:19,  7.15s/it] 41%|████      | 122/300 [14:14<21:19,  7.19s/it] 41%|████      | 123/300 [14:21<20:44,  7.03s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1231
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 41%|████▏     | 124/300 [14:28<20:56,  7.14s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1241
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 42%|████▏     | 125/300 [14:36<21:21,  7.32s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1259
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.3333333333333333'
+ 42%|████▏     | 126/300 [14:43<21:18,  7.35s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1260
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '3.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1262
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 42%|████▏     | 127/300 [14:51<21:28,  7.45s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1279
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 43%|████▎     | 128/300 [14:59<21:34,  7.53s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1286
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 43%|████▎     | 129/300 [15:06<20:59,  7.36s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1296
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 43%|████▎     | 130/300 [15:12<20:09,  7.11s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1302
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 44%|████▎     | 131/300 [15:19<20:07,  7.14s/it] 44%|████▍     | 132/300 [15:26<19:53,  7.11s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1322
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1324
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 44%|████▍     | 133/300 [15:33<19:00,  6.83s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1332
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1338
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 45%|████▍     | 134/300 [15:39<18:24,  6.66s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1345
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.3333333333333333'
+ 45%|████▌     | 135/300 [15:46<18:47,  6.84s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1352
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 45%|████▌     | 136/300 [15:53<18:21,  6.72s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1360
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 46%|████▌     | 137/300 [16:00<18:26,  6.79s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1372
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1376
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 46%|████▌     | 138/300 [16:06<18:24,  6.82s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1386
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1387
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 46%|████▋     | 139/300 [16:13<18:25,  6.87s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1394
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 47%|████▋     | 140/300 [16:21<18:33,  6.96s/it]Sample 1231 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1231 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1241 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1241 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1259 failed with error: invalid literal for int() with base 10: '0.3333333333333333'. Next you will see an "expected an indented block" error. 
+Sample 1259 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1260 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 1260 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1262 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1262 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1279 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1279 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1286 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1286 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1296 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1296 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1302 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1302 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1322 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1322 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1324 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1324 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1332 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1332 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1338 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1338 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1345 failed with error: invalid literal for int() with base 10: '0.3333333333333333'. Next you will see an "expected an indented block" error. 
+Sample 1345 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1352 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1352 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1360 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1360 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1372 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1372 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1376 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1376 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1386 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1386 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1387 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1387 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1394 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1394 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 140/300: 0.007801418439716312
+ 47%|████▋     | 141/300 [16:27<18:18,  6.91s/it] 47%|████▋     | 142/300 [16:35<18:35,  7.06s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1429
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 48%|████▊     | 143/300 [16:41<18:02,  6.90s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1437
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 48%|████▊     | 144/300 [16:48<18:09,  6.98s/it] 48%|████▊     | 145/300 [16:55<17:34,  6.80s/it] 49%|████▊     | 146/300 [17:02<17:48,  6.94s/it] 49%|████▉     | 147/300 [17:10<18:08,  7.11s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1472
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1478
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 49%|████▉     | 148/300 [17:17<17:55,  7.07s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1480
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1482
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_1484
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '3.5'
+ 50%|████▉     | 149/300 [17:23<17:27,  6.94s/it] 50%|█████     | 150/300 [17:30<17:17,  6.92s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1508
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 50%|█████     | 151/300 [17:37<17:15,  6.95s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_1511
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '1.75'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1515
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+ 51%|█████     | 152/300 [17:45<17:34,  7.13s/it] 51%|█████     | 153/300 [17:52<17:22,  7.09s/it] 51%|█████▏    | 154/300 [17:59<17:09,  7.05s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1547
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 52%|█████▏    | 155/300 [18:05<16:46,  6.94s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1553
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 52%|█████▏    | 156/300 [18:12<16:26,  6.85s/it] 52%|█████▏    | 157/300 [18:19<16:27,  6.91s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1577
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1578
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 53%|█████▎    | 158/300 [18:26<16:09,  6.83s/it] 53%|█████▎    | 159/300 [18:33<16:09,  6.87s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1595
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+ 53%|█████▎    | 160/300 [18:40<16:14,  6.96s/it]Sample 1429 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1429 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1437 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1437 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1472 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1472 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1478 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1478 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1480 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1480 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1482 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1482 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1484 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 1484 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1508 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1508 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1511 failed with error: invalid literal for int() with base 10: '1.75'. Next you will see an "expected an indented block" error. 
+Sample 1511 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1515 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 1515 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1547 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1547 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1553 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1553 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1577 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1577 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1578 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1578 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1595 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 1595 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 160/300: 0.0068322981366459624
+ 54%|█████▎    | 161/300 [18:46<15:52,  6.85s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1612
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 54%|█████▍    | 162/300 [18:53<15:41,  6.83s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1623
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '1.4'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1626
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 54%|█████▍    | 163/300 [19:00<15:34,  6.82s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1635
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1639
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 55%|█████▍    | 164/300 [19:07<15:36,  6.89s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1649
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 55%|█████▌    | 165/300 [19:14<15:55,  7.08s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1651
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '1.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_1654
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '3.5'
+ 55%|█████▌    | 166/300 [19:22<16:00,  7.17s/it] 56%|█████▌    | 167/300 [19:29<16:02,  7.23s/it] 56%|█████▌    | 168/300 [19:37<16:12,  7.37s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1687
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1689
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '2.5'
+ 56%|█████▋    | 169/300 [19:44<16:06,  7.38s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1690
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 57%|█████▋    | 170/300 [19:51<15:48,  7.29s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1700
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1705
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1706
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 57%|█████▋    | 171/300 [19:59<15:38,  7.28s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1710
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 57%|█████▋    | 172/300 [20:06<15:41,  7.35s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1720
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1725
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 58%|█████▊    | 173/300 [20:13<15:19,  7.24s/it] 58%|█████▊    | 174/300 [20:21<15:22,  7.32s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1745
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1749
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+ 58%|█████▊    | 175/300 [20:28<15:01,  7.21s/it] 59%|█████▊    | 176/300 [20:35<14:54,  7.21s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1761
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1767
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 59%|█████▉    | 177/300 [20:41<14:23,  7.02s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1773
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.3333333333333333'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1777
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 59%|█████▉    | 178/300 [20:49<14:30,  7.13s/it] 60%|█████▉    | 179/300 [20:56<14:20,  7.11s/it] 60%|██████    | 180/300 [21:03<14:24,  7.20s/it]Sample 1612 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1612 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1623 failed with error: invalid literal for int() with base 10: '1.4'. Next you will see an "expected an indented block" error. 
+Sample 1623 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1626 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1626 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1635 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1635 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1639 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1639 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1649 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1649 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1651 failed with error: invalid literal for int() with base 10: '1.5'. Next you will see an "expected an indented block" error. 
+Sample 1651 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1654 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 1654 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1687 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1687 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1689 failed with error: invalid literal for int() with base 10: '2.5'. Next you will see an "expected an indented block" error. 
+Sample 1689 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1690 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1690 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1700 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1700 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1705 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1705 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1706 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1706 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1710 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1710 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1720 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1720 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1725 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1725 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1745 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1745 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1749 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 1749 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1761 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1761 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1767 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1767 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1773 failed with error: invalid literal for int() with base 10: '0.3333333333333333'. Next you will see an "expected an indented block" error. 
+Sample 1773 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1777 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1777 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 180/300: 0.0066298342541436465
+ 60%|██████    | 181/300 [21:10<14:07,  7.12s/it] 61%|██████    | 182/300 [21:17<14:02,  7.14s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1826
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 61%|██████    | 183/300 [21:25<14:03,  7.21s/it] 61%|██████▏   | 184/300 [21:32<13:49,  7.15s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1844
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1848
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 62%|██████▏   | 185/300 [21:39<13:59,  7.30s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1853
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 62%|██████▏   | 186/300 [21:46<13:18,  7.01s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1860
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '3.5'
+ 62%|██████▏   | 187/300 [21:52<12:48,  6.80s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1870
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1878
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1879
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 63%|██████▎   | 188/300 [21:59<12:55,  6.92s/it] 63%|██████▎   | 189/300 [22:07<13:00,  7.03s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1891
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 63%|██████▎   | 190/300 [22:13<12:43,  6.94s/it] 64%|██████▎   | 191/300 [22:21<13:04,  7.20s/it] 64%|██████▍   | 192/300 [22:29<13:12,  7.34s/it] 64%|██████▍   | 193/300 [22:36<13:04,  7.33s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1930
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1931
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 65%|██████▍   | 194/300 [22:44<13:01,  7.37s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1948
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 65%|██████▌   | 195/300 [22:51<12:46,  7.30s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1950
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1951
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 65%|██████▌   | 196/300 [22:57<12:17,  7.10s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1966
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '3.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_1967
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 66%|██████▌   | 197/300 [23:04<12:10,  7.09s/it] 66%|██████▌   | 198/300 [23:11<11:56,  7.03s/it] 66%|██████▋   | 199/300 [23:18<11:48,  7.02s/it] 67%|██████▋   | 200/300 [23:25<11:40,  7.00s/it]Sample 1826 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1826 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1844 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1844 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1848 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1848 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1853 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1853 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1860 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 1860 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1870 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1870 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1878 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1878 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1879 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1879 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1891 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1891 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1930 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1930 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1931 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1931 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1948 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1948 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1950 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1950 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1951 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1951 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1966 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 1966 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 1967 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 1967 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 200/300: 0.005970149253731343
+ 67%|██████▋   | 201/300 [23:32<11:36,  7.03s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2011
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2016
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '1.5'
+ 67%|██████▋   | 202/300 [23:39<11:16,  6.91s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2027
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 68%|██████▊   | 203/300 [23:45<10:57,  6.78s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2036
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 68%|██████▊   | 204/300 [23:52<10:54,  6.82s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2040
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 68%|██████▊   | 205/300 [24:00<11:01,  6.97s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2051
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2053
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 69%|██████▊   | 206/300 [24:07<10:59,  7.02s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2060
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2062
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2066
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 69%|██████▉   | 207/300 [24:14<10:49,  6.98s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2070
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2075
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 69%|██████▉   | 208/300 [24:21<10:53,  7.10s/it] 70%|██████▉   | 209/300 [24:29<11:02,  7.28s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2097
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 70%|███████   | 210/300 [24:36<10:50,  7.22s/it] 70%|███████   | 211/300 [24:43<10:30,  7.08s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2116
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2119
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 71%|███████   | 212/300 [24:50<10:26,  7.12s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2122
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 71%|███████   | 213/300 [24:57<10:17,  7.10s/it] 71%|███████▏  | 214/300 [25:04<10:06,  7.06s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2141
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+ 72%|███████▏  | 215/300 [25:11<10:03,  7.10s/it] 72%|███████▏  | 216/300 [25:19<10:09,  7.25s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2165
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 72%|███████▏  | 217/300 [25:26<10:03,  7.27s/it] 73%|███████▎  | 218/300 [25:33<09:41,  7.09s/it] 73%|███████▎  | 219/300 [25:40<09:33,  7.08s/it] 73%|███████▎  | 220/300 [25:47<09:34,  7.18s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2206
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Sample 2011 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2011 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2016 failed with error: invalid literal for int() with base 10: '1.5'. Next you will see an "expected an indented block" error. 
+Sample 2016 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2027 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2027 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2036 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2036 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2040 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2040 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2051 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2051 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2053 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2053 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2060 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2060 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2062 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2062 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2066 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2066 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2070 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2070 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2075 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2075 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2097 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2097 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2116 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2116 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2119 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2119 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2122 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2122 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2141 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 2141 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2165 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2165 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2206 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2206 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 220/300: 0.0058823529411764705
+ 74%|███████▎  | 221/300 [25:54<09:15,  7.03s/it] 74%|███████▍  | 222/300 [26:00<08:52,  6.82s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2220
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2222
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.3333333333333333'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2228
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2229
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 74%|███████▍  | 223/300 [26:07<08:52,  6.91s/it] 75%|███████▍  | 224/300 [26:14<08:49,  6.97s/it] 75%|███████▌  | 225/300 [26:22<08:52,  7.09s/it] 75%|███████▌  | 226/300 [26:28<08:29,  6.89s/it] 76%|███████▌  | 227/300 [26:35<08:32,  7.02s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2277
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 76%|███████▌  | 228/300 [26:43<08:31,  7.10s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2287
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 76%|███████▋  | 229/300 [26:50<08:22,  7.08s/it] 77%|███████▋  | 230/300 [26:57<08:21,  7.17s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2302
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 77%|███████▋  | 231/300 [27:04<08:15,  7.18s/it] 77%|███████▋  | 232/300 [27:12<08:19,  7.35s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2323
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2325
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 78%|███████▊  | 233/300 [27:19<07:57,  7.13s/it] 78%|███████▊  | 234/300 [27:26<07:44,  7.04s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2341
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2348
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 78%|███████▊  | 235/300 [27:33<07:38,  7.06s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2357
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '3.5'
+ 79%|███████▊  | 236/300 [27:40<07:38,  7.16s/it] 79%|███████▉  | 237/300 [27:48<07:39,  7.30s/it] 79%|███████▉  | 238/300 [27:55<07:35,  7.35s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2387
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 80%|███████▉  | 239/300 [28:02<07:26,  7.32s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2392
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2398
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 80%|████████  | 240/300 [28:09<07:11,  7.19s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2402
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '1.5'
+Sample 2220 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2220 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2222 failed with error: invalid literal for int() with base 10: '0.3333333333333333'. Next you will see an "expected an indented block" error. 
+Sample 2222 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2228 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2228 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2229 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2229 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2277 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2277 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2287 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2287 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2302 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2302 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2323 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2323 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2325 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2325 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2341 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2341 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2348 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2348 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2357 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 2357 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2387 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2387 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2392 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2392 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2398 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2398 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2402 failed with error: invalid literal for int() with base 10: '1.5'. Next you will see an "expected an indented block" error. 
+Sample 2402 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 240/300: 0.005809128630705394
+ 80%|████████  | 241/300 [28:16<06:59,  7.11s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_2414
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '0.5'
+ 81%|████████  | 242/300 [28:24<07:03,  7.31s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2429
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 81%|████████  | 243/300 [28:31<06:57,  7.33s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2431
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 81%|████████▏ | 244/300 [28:39<06:58,  7.47s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2449
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 82%|████████▏ | 245/300 [28:46<06:46,  7.39s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2450
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_2455
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '0.1'
+ 82%|████████▏ | 246/300 [28:54<06:37,  7.36s/it] 82%|████████▏ | 247/300 [29:01<06:27,  7.31s/it] 83%|████████▎ | 248/300 [29:08<06:12,  7.17s/it] 83%|████████▎ | 249/300 [29:15<06:13,  7.32s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2492
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '3.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2499
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 83%|████████▎ | 250/300 [29:23<06:04,  7.28s/it] 84%|████████▎ | 251/300 [29:29<05:51,  7.17s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2515
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2519
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 84%|████████▍ | 252/300 [29:36<05:39,  7.08s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2521
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2523
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 84%|████████▍ | 253/300 [29:43<05:22,  6.87s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2537
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.8'
+ 85%|████████▍ | 254/300 [29:49<05:14,  6.83s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_2547
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '3.5'
+ 85%|████████▌ | 255/300 [29:57<05:14,  6.99s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2558
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '2.25'
+ 85%|████████▌ | 256/300 [30:04<05:12,  7.11s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2560
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 86%|████████▌ | 257/300 [30:11<05:01,  7.01s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2575
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 86%|████████▌ | 258/300 [30:18<04:54,  7.02s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2586
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 86%|████████▋ | 259/300 [30:24<04:40,  6.84s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2592
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '3.5'
+ 87%|████████▋ | 260/300 [30:30<04:20,  6.52s/it]Sample 2414 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2414 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2429 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2429 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2431 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2431 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2449 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2449 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2450 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 2450 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2455 failed with error: invalid literal for int() with base 10: '0.1'. Next you will see an "expected an indented block" error. 
+Sample 2455 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2492 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 2492 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2499 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2499 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2515 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 2515 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2519 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2519 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2521 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2521 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2523 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2523 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2537 failed with error: invalid literal for int() with base 10: '0.8'. Next you will see an "expected an indented block" error. 
+Sample 2537 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2547 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 2547 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2558 failed with error: invalid literal for int() with base 10: '2.25'. Next you will see an "expected an indented block" error. 
+Sample 2558 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2560 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2560 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2575 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2575 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2586 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2586 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2592 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 2592 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 260/300: 0.0053639846743295016
+ 87%|████████▋ | 261/300 [30:37<04:17,  6.59s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2611
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 87%|████████▋ | 262/300 [30:45<04:21,  6.89s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2620
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+ 88%|████████▊ | 263/300 [30:52<04:19,  7.03s/it] 88%|████████▊ | 264/300 [30:59<04:18,  7.19s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2644
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2646
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 88%|████████▊ | 265/300 [31:07<04:11,  7.19s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2651
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_2654
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '0.125'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2658
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 89%|████████▊ | 266/300 [31:14<04:02,  7.12s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2668
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.3333333333333333'
+ 89%|████████▉ | 267/300 [31:21<03:59,  7.25s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2670
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '3.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2674
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 89%|████████▉ | 268/300 [31:28<03:43,  6.99s/it] 90%|████████▉ | 269/300 [31:34<03:33,  6.88s/it] 90%|█████████ | 270/300 [31:41<03:24,  6.82s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_2701
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '3.5'
+ 90%|█████████ | 271/300 [31:48<03:18,  6.86s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2710
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 91%|█████████ | 272/300 [31:55<03:13,  6.93s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2726
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2728
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 91%|█████████ | 273/300 [32:01<03:04,  6.82s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2731
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2732
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2734
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 91%|█████████▏| 274/300 [32:08<02:56,  6.77s/it] 92%|█████████▏| 275/300 [32:16<02:54,  6.96s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2754
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 92%|█████████▏| 276/300 [32:23<02:48,  7.03s/it] 92%|█████████▏| 277/300 [32:29<02:38,  6.88s/it] 93%|█████████▎| 278/300 [32:37<02:35,  7.06s/it] 93%|█████████▎| 279/300 [32:44<02:31,  7.20s/it] 93%|█████████▎| 280/300 [32:51<02:23,  7.16s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2808
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2809
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Sample 2611 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2611 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2620 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 2620 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2644 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2644 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2646 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2646 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2651 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2651 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2654 failed with error: invalid literal for int() with base 10: '0.125'. Next you will see an "expected an indented block" error. 
+Sample 2654 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2658 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2658 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2668 failed with error: invalid literal for int() with base 10: '0.3333333333333333'. Next you will see an "expected an indented block" error. 
+Sample 2668 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2670 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 2670 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2674 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2674 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2701 failed with error: invalid literal for int() with base 10: '3.5'. Next you will see an "expected an indented block" error. 
+Sample 2701 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2710 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2710 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2726 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2726 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2728 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2728 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2731 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2731 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2732 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2732 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2734 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2734 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2754 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2754 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2808 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2808 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2809 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2809 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Accuracy at Batch 280/300: 0.005338078291814947
+ 94%|█████████▎| 281/300 [32:58<02:15,  7.14s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2810
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 94%|█████████▍| 282/300 [33:05<02:06,  7.05s/it] 94%|█████████▍| 283/300 [33:13<02:02,  7.23s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2831
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2833
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 95%|█████████▍| 284/300 [33:20<01:56,  7.30s/it] 95%|█████████▌| 285/300 [33:28<01:49,  7.32s/it] 95%|█████████▌| 286/300 [33:34<01:38,  7.02s/it] 96%|█████████▌| 287/300 [33:40<01:28,  6.79s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2874
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2876
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 96%|█████████▌| 288/300 [33:47<01:19,  6.62s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2881
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.25'
+ 96%|█████████▋| 289/300 [33:53<01:13,  6.72s/it] 97%|█████████▋| 290/300 [34:00<01:07,  6.75s/it] 97%|█████████▋| 291/300 [34:08<01:02,  6.92s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2910
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2914
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 16, in execute_command_2916
+    from omegaconf import OmegaConf
+  File "Codex", line 16, in <listcomp>
+    from omegaconf import OmegaConf
+ValueError: invalid literal for int() with base 10: '0.5'
+Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2919
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 97%|█████████▋| 292/300 [34:14<00:55,  6.89s/it] 98%|█████████▊| 293/300 [34:22<00:49,  7.07s/it] 98%|█████████▊| 294/300 [34:29<00:41,  6.97s/it] 98%|█████████▊| 295/300 [34:35<00:34,  6.83s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2956
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '1.5'
+ 99%|█████████▊| 296/300 [34:42<00:27,  6.87s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2966
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 99%|█████████▉| 297/300 [34:49<00:21,  7.02s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2970
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+ 99%|█████████▉| 298/300 [34:57<00:14,  7.19s/it]Traceback (most recent call last):
+  File "/home/weixinchen/viper/main_batch.py", line 82, in run_program
+    result = globals()[f'execute_command_{sample_id}'](
+  File "Codex", line 15, in execute_command_2984
+    import numpy as np
+  File "Codex", line 15, in <listcomp>
+    import numpy as np
+ValueError: invalid literal for int() with base 10: '0.5'
+100%|█████████▉| 299/300 [35:04<00:07,  7.21s/it]100%|██████████| 300/300 [35:11<00:00,  7.14s/it]100%|██████████| 300/300 [35:11<00:00,  7.04s/it]
+Sample 2810 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2810 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2831 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2831 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2833 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2833 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2874 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2874 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2876 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2876 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2881 failed with error: invalid literal for int() with base 10: '0.25'. Next you will see an "expected an indented block" error. 
+Sample 2881 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2910 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2910 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2914 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2914 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2916 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2916 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2919 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2919 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2956 failed with error: invalid literal for int() with base 10: '1.5'. Next you will see an "expected an indented block" error. 
+Sample 2956 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2966 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2966 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2970 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2970 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+Sample 2984 failed with error: invalid literal for int() with base 10: '0.5'. Next you will see an "expected an indented block" error. 
+Sample 2984 failed at compilation time with error: unexpected EOF while parsing (Codex, line 1)
+***Running time: 2111.812793 seconds***
+Final accuracy: 0.006
+Saving results to results_1.csv

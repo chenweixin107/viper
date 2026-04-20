@@ -1,0 +1,75 @@
+multiprocessing: False
+path_pretrained_models: './pretrained_models'
+execute_code: True
+
+dataset:
+    dataset_name: 'MyDataset'
+    data_path: './data/MNLogic_XOR_3digit_red.csv'
+    split: ''
+    max_samples:
+    batch_size: 10
+    start_sample: 0
+
+load_models:
+    maskrcnn: False
+    clip: True
+    glip: False
+    owlvit: False
+    groundingdino: True
+    tcl: False
+    gpt3_qa: False
+    gpt3_general: True
+    depth: False
+    blip: True
+    saliency: False
+    xvlm: False
+    codex: False
+    codellama: True
+
+detect_thresholds:
+    glip: 0.5
+    maskrcnn: 0.8
+    owlvit: 0.1
+    groundingdino: 0.4
+ratio_box_area_to_image_area: 0.0
+crop_larger_margin: True
+
+verify_property:
+    model: clip
+    thresh_clip: 0.6
+    thresh_tcl: 0.25
+    thresh_xvlm: 0.6
+
+best_match_model: clip
+
+gpt3:
+    n_votes: 1
+    qa_prompt: ./prompts/gpt3/gpt3_qa.txt
+    guess_prompt: ./prompts/gpt3/gpt3_process_guess.txt
+    temperature: 0.
+    model: qwen2.5-3b-instruct
+
+codex:
+    model: codellama
+    codellama_model_name: codellama/CodeLlama-13b-hf
+    temperature: 0.
+    best_of: 1
+    max_tokens: 512
+    prompt: ./prompts/chatapi.prompt
+
+save: True
+save_new_results: True
+results_dir: ./results_ood/MNLogic_XOR_3digit_red/
+use_cache: True
+clear_cache: False
+use_cached_codex: True
+cached_codex_path: '/home/weixinchen/viper/results/MNLogic_XOR_3digit/code_results.csv'
+log_every: 20
+wandb: False
+
+blip_half_precision: True
+blip_v2_model_type: Qwen/Qwen2.5-VL-7B-Instruct
+blip_qa_prompt_template: "Question: {} Please output one number only. Answer:"
+
+use_fixed_code: False
+fixed_code_file: ./prompts/fixed_code/blip2.prompt

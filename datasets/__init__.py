@@ -6,6 +6,7 @@ Adapted in part from https://github.com/phiyodr/vqaloader/blob/master/vqaloader/
 import torch
 from torchvision import transforms
 
+import pdb
 
 # ----------------------------- General for all datasets ----------------------------- #
 def get_dataset(config_dataset):
@@ -69,12 +70,19 @@ def general_postprocessing(prediction):
     prediction = prediction.strip()
     prediction = prediction.lower()
 
-    if prediction == 'true':
-        prediction = 'yes'
-    elif prediction == 'false':
-        prediction = 'no'
+    # if prediction == 'true':
+    #     prediction = 'yes'
+    # elif prediction == 'false':
+    #     prediction = 'no'
     return prediction
 
+def process_ground_truth(p, g):
+    if isinstance(g, bool):
+        if p in ['true', 'false']:
+            g = str(g).lower()
+        else:
+            g = int(g)
+    return str(g).lower()
 
 def accuracy(prediction, ground_truth, *args):
     """
@@ -90,6 +98,8 @@ def accuracy(prediction, ground_truth, *args):
     pred_gt_filtered = [(pred, gt) for pred, gt in zip(prediction, ground_truth) if gt != '']
     score = 0
     for p, g in pred_gt_filtered:
-        if general_postprocessing(p) == g:
+        p = general_postprocessing(p)
+        g = process_ground_truth(p, g)
+        if p == g:
             score += 1
     return score / len(pred_gt_filtered)

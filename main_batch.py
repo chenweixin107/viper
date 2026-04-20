@@ -2,6 +2,7 @@ import datetime
 import math
 import os
 import pathlib
+import time
 from functools import partial
 import warnings
 import traceback
@@ -21,6 +22,8 @@ from configs import config
 from utils import seed_everything
 import datasets
 
+import pdb
+
 # See https://github.com/pytorch/pytorch/issues/11201, https://github.com/pytorch/pytorch/issues/973
 # Not for dataloader, but for multiprocessing batches
 mp.set_sharing_strategy('file_system')
@@ -28,7 +31,7 @@ queue_results = None
 
 cache = Memory('cache/' if config.use_cache else None, verbose=0)
 runs_dict = {}
-seed_everything()
+seed_everything(seed=1)
 console = Console(highlight=False)
 
 
@@ -51,7 +54,8 @@ def run_program(parameters, queues_in_, input_type_, retrying=False):
                   f'ImagePatch, VideoSegment, ' \
                   'llm_query, bool_to_yesno, distance, best_image_match):\n' \
                   f'    # Answer is:'
-    code = code_header + code
+    # code = code_header + code
+    code = code.replace('def execute_command(image):', code_header) # New
 
     try:
         exec(compile(code, 'Codex', 'exec'), globals())
@@ -60,7 +64,9 @@ def run_program(parameters, queues_in_, input_type_, retrying=False):
         try:
             with open(config.fixed_code_file, 'r') as f:
                 fixed_code = f.read()
-            code = code_header + fixed_code 
+            code = code_header + fixed_code
+            # code = code.replace('question', "'"+query+"'")
+            code = code.replace('question', 'query') # New
             exec(compile(code, 'Codex', 'exec'), globals())
         except Exception as e2:
             print(f'Not even the fixed code worked. Sample {sample_id} failed at compilation time with error: {e2}')
@@ -88,6 +94,7 @@ def run_program(parameters, queues_in_, input_type_, retrying=False):
         print(f'Sample {sample_id} failed with error: {e}. Next you will see an "expected an indented block" error. ')
         # Retry again with fixed code
         new_code = "["  # This code will break upon execution, and it will be caught by the except clause
+        # new_code = 'def execute_command(image):\n    image_patch = ImagePatch(image)\n    return image_patch.simple_query(question)'
         result = run_program((new_code, sample_id, image, possible_answers, query), queues_in_, input_type_,
                              retrying=True)[0]
 
@@ -96,6 +103,7 @@ def run_program(parameters, queues_in_, input_type_, retrying=False):
     # libraries for some reason. Because defining it globally is not ideal, we just delete it after running it.
     if f'execute_command_{sample_id}' in globals():
         del globals()[f'execute_command_{sample_id}']  # If it failed to compile the code, it won't be defined
+
     return result, code
 
 
@@ -141,7 +149,9 @@ def main():
     codes_all = None
     if config.use_cached_codex:
         results = pd.read_csv(config.cached_codex_path)
-        codes_all = [r.split('# Answer is:')[1] for r in results['code']]
+        # codes_all = [r.split('# Answer is:')[1] for r in results['code']]
+        codes_all = results['code'][0] # New, codes_all is now a string
+
     # python -c "from joblib import Memory; cache = Memory('cache/', verbose=0); cache.clear()"
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=0, pin_memory=True,
                             collate_fn=my_collate)
@@ -155,6 +165,8 @@ def main():
     all_img_paths = []
     all_possible_answers = []
     all_query_types = []
+
+    start_time = time.time()
 
     with mp.Pool(processes=num_processes, initializer=worker_init, initargs=(queues_results,)) \
             if config.multiprocessing else open(os.devnull, "w") as pool:
@@ -171,7 +183,8 @@ def main():
                                   extra_context=batch['extra_context'])
 
                 else:
-                    codes = codes_all[i * batch_size:(i + 1) * batch_size]  # If cache
+                    # codes = codes_all[i * batch_size:(i + 1) * batch_size]  # If cache
+                    codes = [codes_all] * batch_size # New
 
                 # Run the code
                 if config.execute_code:
@@ -213,6 +226,11 @@ def main():
             traceback.print_exc()
             console.print(f'Exception: {e}')
             console.print("Completing logging and exiting...")
+
+    # Print running time
+    end_time = time.time()
+    run_time = end_time - start_time
+    print(f"***Running time: {run_time:.6f} seconds***")
 
     try:
         accuracy = dataset.accuracy(all_results, all_answers, all_possible_answers, all_query_types)

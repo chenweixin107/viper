@@ -41,6 +41,12 @@ img = Image.open(img_path).convert("RGB")
 text = ['object']
 text = [t.lower().strip().rstrip('.') + '.' for t in text]
 
+# Alternative example:
+# img_path = "/home/jovyan/workspace/datasets/MNMath_Add_3digit/val/5.png"
+# img = Image.open(img_path).convert("RGB")
+# text = ['digit']
+# text = [t.lower().strip().rstrip('.') + '.' for t in text]
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load model
